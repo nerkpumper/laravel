@@ -1,0 +1,1 @@
+<div class="well well-lg">Todos los derechos reservados</div>

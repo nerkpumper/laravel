@@ -1327,3 +1327,92 @@
   background: transparent;
   border-color: transparent;
 }
+  
+
+/* Modificando Navy */
+
+.app-bar.navynrk {
+  background-color: #f8f8f8;
+  color: #000000;
+}
+.app-bar.navynrk .app-bar-element:hover,
+.app-bar.navynrk .app-bar-menu > li:hover,
+.app-bar.navynrk .app-bar-menu > li > a:hover,
+.app-bar.navynrk .app-bar-element:active,
+.app-bar.navynrk .app-bar-menu > li:active,
+.app-bar.navynrk .app-bar-menu > li > a:active {
+  background-color: #f8f8f8;
+}
+.app-bar.navynrk .app-bar-divider {
+  background-color: #ccc;
+}
+.app-bar.navynrk .app-bar-element .d-menu,
+.app-bar.navynrk .app-bar-menu > li .d-menu {
+  background-color: #f8f8f8;
+  border-color: transparent;
+}
+.app-bar.navynrk .app-bar-element .d-menu li:not(.disabled) > a,
+.app-bar.navynrk .app-bar-menu > li .d-menu li:not(.disabled) > a,
+.app-bar.navynrk .app-bar-element .d-menu li > a,
+.app-bar.navynrk .app-bar-menu > li .d-menu li > a {
+  background-color: #ffffff;
+  color: #000000;
+}
+.app-bar.navynrk .app-bar-element .d-menu li:not(.disabled) > a:hover,
+.app-bar.navynrk .app-bar-menu > li .d-menu li:not(.disabled) > a:hover,
+.app-bar.navynrk .app-bar-element .d-menu li > a:hover,
+.app-bar.navynrk .app-bar-menu > li .d-menu li > a:hover {
+  background-color: #e7e7e7;
+  color: #000000;
+}
+.app-bar.navynrk .app-bar-element .d-menu li:hover > a,
+.app-bar.navynrk .app-bar-menu > li .d-menu li:hover > a {
+  background-color: #e7e7e7;
+}
+.app-bar.navynrk .app-bar-element .d-menu .divider,
+.app-bar.navynrk .app-bar-menu > li .d-menu .divider {
+  background-color: #ccc;
+}
+.app-bar.navynrk .app-bar-element .d-menu .divider:hover,
+.app-bar.navynrk .app-bar-menu > li .d-menu .divider:hover {
+  background-color: #ccc;
+}
+.app-bar.navynrk .app-bar-element .dropdown-toggle:before,
+.app-bar.navynrk .app-bar-menu li .dropdown-toggle:before {
+  border-color: #000000;
+}
+.app-bar.navynrk .app-bar-element.disabled,
+.app-bar.navynrk .app-bar-menu li.disabled,
+.app-bar.navynrk .app-bar-element:disabled,
+.app-bar.navynrk .app-bar-menu li:disabled {
+  color: #555555;
+}
+.app-bar.navynrk .app-bar-element.disabled a,
+.app-bar.navynrk .app-bar-menu li.disabled a,
+.app-bar.navynrk .app-bar-element:disabled a,
+.app-bar.navynrk .app-bar-menu li:disabled a {
+  color: inherit !important;
+}
+.app-bar.navynrk .app-bar-pullbutton:hover {
+  background-color: #005696;
+}
+.app-bar.navynrk .app-bar-drop-container {
+  border: 2px solid #f8f8f8;
+  background-color: #f8f8f8;
+  color: #000000;
+}
+.app-bar.navynrk .app-bar-drop-container:before {
+  background-color: #f8f8f8;
+  border-color: #f8f8f8;
+}
+.app-bar.navynrk .app-bar-pullmenu .app-bar-menu {
+  border-top: 1px solid #ccc;
+  background-color: #ccc;
+}
+.app-bar.navynrk .app-bar-pullmenu .app-bar-menu li:hover {
+  background-color: #f8f8f8;
+}
+.app-bar.navynrk .app-bar-pullmenu .app-bar-menu li:hover a {
+  background-color: #005696;
+  color: #000000;
+}

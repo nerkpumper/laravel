@@ -22,10 +22,14 @@
 | kernel and includes session state, CSRF protection, and more.
 |
 */
-
+	
 Route::group(['prefix' => 'admin'], function () {
 
 	Route::resource('users', 'UsersController');
+	Route::get('users/{id}/destroy', [
+		'uses' => 'UsersController@destroy',
+		'as'   => 'admin.users.destroy'
+	]);
 
 	Route::group(['middleware' => 'web'], function () {
 		Route::resource('users', 'UsersController');    

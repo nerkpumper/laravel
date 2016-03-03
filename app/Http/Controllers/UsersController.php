@@ -16,7 +16,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return view('admin.users.index');
+        $users = \NerkPumper\User::orderBy('id', 'ASC')->paginate(10);
+        return view ('admin.users.index')->with('users', $users);
     }
 
     /**
@@ -26,7 +27,7 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.users.create');
     }
 
     /**
@@ -37,7 +38,14 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = new \NerkPumper\User($request->all());
+        $user->password = bcrypt ($request->password);
+        
+        $user->save();
+        
+        $request->session()->flash('message', 'store');
+        
+        return redirect('admin/users');
     }
 
     /**
@@ -82,6 +90,11 @@ class UsersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = \NerkPumper\User::find($id);
+        $user->delete();
+
+        
+        
+        return redirect('admin/users')->with('destroy', 'Profile updated!');;
     }
 }

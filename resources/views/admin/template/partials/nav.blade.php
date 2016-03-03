@@ -1,6 +1,6 @@
-<div class="app-bar fixed-top navy" data-role="appbar">
+<div class="app-bar navy shadow " data-role="appbar">
     <div class="container">
-        <a class="app-bar-element branding">Metro UI CSS</a>
+        <a class="app-bar-element"><img src="{{ asset('imgs/thunder.png') }}" style="height: 44px; display: inline-block; margin-right: 10px;"></span></a>        
         <span class="app-bar-divider"></span>
         <ul class="app-bar-menu">
             <li><a href="">Home</a></li>
