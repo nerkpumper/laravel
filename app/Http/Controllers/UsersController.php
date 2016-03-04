@@ -93,8 +93,6 @@ class UsersController extends Controller
         $user = \NerkPumper\User::find($id);
         $user->delete();
 
-        
-        
-        return redirect('admin/users')->with('destroy', 'Profile updated!');;
+        return redirect('admin/users')->with('success', 'Usuario ' . $user->nombre . ' eliminado de manera correcta.' );
     }
 }
