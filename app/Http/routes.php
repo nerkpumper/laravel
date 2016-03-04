@@ -25,14 +25,21 @@
 	
 Route::group(['prefix' => 'admin'], function () {
 
-	Route::resource('users', 'UsersController');
-	Route::get('users/{id}/destroy', [
-		'uses' => 'UsersController@destroy',
-		'as'   => 'admin.users.destroy'
-	]);
+	/*Route::resource('users', 'UsersController');*/
+	
 
 	Route::group(['middleware' => 'web'], function () {
-		Route::resource('users', 'UsersController');    
+		Route::resource('users', 'UsersController');   
+
+		Route::get('users/{id}/destroy', [
+		'uses' => 'UsersController@destroy',
+		'as'   => 'admin.users.destroy'
+		]); 
+
+		Route::get('users/{id}/confirmdestroy', [
+		'uses' => 'UsersController@confirmdestroy',
+		'as'   => 'admin.users.confirmdestroy'
+		]);
 	    
 	});
 

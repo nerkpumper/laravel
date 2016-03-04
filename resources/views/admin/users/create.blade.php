@@ -29,7 +29,9 @@
 			{!! Form::password ('password', ['placeholder' => '**********', 'required'] ) !!}
 		</div> 	
 
-		{!! Form::submit ('Registrar', ['class' => 'button primary rounded']) !!}
+		{!! Form::submit ('Registrar', ['class' => 'button success rounded']) !!}
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="{{ URL::previous() }}" class="button info rounded">Regresar</a>	
 		
 	{!! Form::close() !!}
 

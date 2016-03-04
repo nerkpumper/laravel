@@ -38,8 +38,8 @@
 		    </div>
 		</div>-->
 
-		<div class="panel shadow ">
-		    <div class="heading" >
+		<div class="panel shadow">
+		    <div class="heading @yield('panelHeadColor', '')">
 		        <span class="title">@yield('module', '')</span>
 		    </div>
 		    <div class="content bg-white">
